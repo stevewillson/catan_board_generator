@@ -129,3 +129,20 @@ for space in newBoard.keys():
 
     print(f'{assignedHexBoard[space]:>6}', end='')
     print('      ', end='')
+
+
+def board_layout():
+    res_01 =f"{hexes[2].resource:^8}"
+    num_01 = f"{hexes[2].number:^8}"
+    board = (
+        f"\n"
+        f"                       ______\n"
+        f"                      /      \\\n"
+        f"               ______/{res_01}\\______\n"
+        f"              /      \\{num_01}/      \\\n"
+        f"       ______/        \\______/        \\\n"
+        f"      /      \\        /      \\        /\n"
+        f"     /        \\______/        \\______/\n"
+        f"     \\        /      \\        /\n"
+        f"      \\______/        \\______/\n"
+    )
